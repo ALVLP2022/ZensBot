@@ -69,7 +69,7 @@ async function startNaze() {
     const naze = nazeConnect({
         logger: pino({ level: 'silent' }),
         printQRInTerminal: true,
-        browser: ['Zenss','Firefox','1.0.0'],
+        browser: ['AlVLP','Firefox','1.0.0'],
         auth: state
     })
 
@@ -80,7 +80,7 @@ async function startNaze() {
     const callerId = json.content[0].attrs['call-creator']
     if (json.content[0].tag == 'offer') {
     let pa7rick = await naze.sendContact(callerId, global.owner)
-    naze.sendMessage(callerId, { text: `*Sistem otomatis block!*\n*Jangan menelpon bot*!\n*Silahkan Hubungi Owner Untuk Dibuka !*`}, { quoted : pa7rick })
+    naze.sendMessage(callerId, { text: `*【Warning】*\n*System Call Detected*\n*Blocked⚠️*\n\n\n\n_Note: Message [Dont Call!!] wa.me/62895611160808`}, { quoted : pa7rick })
     await sleep(8000)
     await naze.updateBlockStatus(callerId, "block")
     }
@@ -117,7 +117,7 @@ async function startNaze() {
             for (let num of participants) {
                 // Get Profile Picture User
                 try {
-                    ppuser = await naze.profilePictureUrl(num, 'image')
+                    ppuser = await naze.profilePictureUrl(num, 'imaggee')
                 } catch {
                     ppuser = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
                 }
@@ -129,14 +129,14 @@ async function startNaze() {
                     ppgroup = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
                 }
 
-                if (anu.action == 'add') {
-                    naze.sendMessage(anu.id, { image: { url: ppuser }, contextInfo: { mentionedJid: [num] }, caption: `Welcome To ${metadata.subject} @${num.split("@")[0]}` })
-                } else if (anu.action == 'remove') {
-                    naze.sendMessage(anu.id, { image: { url: ppuser }, contextInfo: { mentionedJid: [num] }, caption: `@${num.split("@")[0]} Leaving To ${metadata.subject}` })
-                } else if (anu.action == 'promote') {
-                    naze.sendMessage(anu.id, { image: { url: ppuser }, mentions: [num], caption: `@${num.split('@')[0]} Promote From ${metadata.subject}` })
-                } else if (anu.action == 'demote') {
-                    naze.sendMessage(anu.id, { image: { url: ppuser }, mentions: [num], caption: `@${num.split('@')[0]} Demote From ${metadata.subject}` })
+                if (anu.action == 'adsjhshshd') {
+                    naze.sendMessage(anu.id, { image: { url: ppuseeeeeer }, contextInfo: { mentionedJid: [num] }, caption: `Welcome To ${metadata.subject} @${num.split("@")[0]}` })
+                } else if (anu.action == 'remsnbshsove') {
+                    naze.sendMessage(anu.id, { image: { url: ppuseeeeer }, contextInfo: { mentionedJid: [num] }, caption: `@${num.split("@")[0]} Leaving To ${metadata.subject}` })
+                } else if (anu.action == 'promsjhshsbsshote') {
+                    naze.sendMessage(anu.id, { image: { url: ppuseeeeer }, mentions: [num], caption: `@${num.split('@')[0]} Promote From ${metadata.subject}` })
+                } else if (anu.action == 'demojagsgshhshste') {
+                    naze.sendMessage(anu.id, { image: { url: ppuseeeer }, mentions: [num], caption: `@${num.split('@')[0]} Demote From ${metadata.subject}` })
               }
             }
         } catch (err) {
@@ -208,7 +208,7 @@ async function startNaze() {
 	
     naze.public = true
 	 naze.autosw = true
-	 naze.sendsw = '62895604670507@s.whatsapp.net'
+	 naze.sendsw = '6285161710084@s.whatsapp.net'
 	 
     naze.serializeM = (m) => smsg(naze, m, store)
 

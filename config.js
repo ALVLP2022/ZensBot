@@ -1,7 +1,3 @@
-/**
-   * Create By Dika Ardnt.
-*/
-
 const fs = require('fs')
 const chalk = require('chalk')
 
@@ -16,29 +12,29 @@ global.APIKeys = {
 }
 
 // Other
-global.owner = ['62895604670507']
-global.ownernomer = "62895604670507"
-global.premium = ['62895604670507','6281328144300']
-global.packname = 'Zenss'
-global.author = 'Cuyy'
-global.sessionName = 'zenss'
+global.owner = ['AlVLP']
+global.ownernomer = "6285161710094"
+global.premium = ['6285161710084','62895611160808']
+global.packname = 'AlVLP'
+global.author = '6285161710084'
+global.sessionName = 'Private!18102022'
 global.prefa = ['','!','.','#','&']
 global.sp = ''
 global.mess = {
-    success: 'Done',
-    admin: 'Fitur Khusus Admin Group!',
+    success: 'Done ~Oke Desu',
+    admin: 'Admin Only!',
     botAdmin: 'Bot Harus Menjadi Admin Terlebih Dahulu!',
-    premime: 'Fitur Khusus Premium Kalo Mau Daftar Ketik Sewa',
-    owner: 'Fitur Khusus Owner Bot',
-    group: 'Fitur Digunakan Hanya Untuk Group!',
-    private: 'Fitur Digunakan Hanya Untuk Private Chat!',
-    bot: 'Fitur Khusus Pengguna Nomor Bot',
+    premime: 'Premium Only',
+    owner: 'Mastah Only',
+    group: 'Group Only',
+    private: 'Private Chat!',
+    bot: 'AlVBOT',
     wait: 'Loading...',
     endLimit: 'Limit Harian Anda Telah Habis, Limit Akan Direset Setiap Jam 12',
 }
 global.limitawal = {
     premium: "Infinity",
-    free: 25
+    free: 1
 }
 global.thumb = fs.readFileSync('./image/zens.jpg')
 global.vaze = { url: 'https://telegra.ph/file/15209657f9d4f59c7ca1e.mp4' }
